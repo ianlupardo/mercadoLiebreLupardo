@@ -1,0 +1,524 @@
+/* :root{
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #0044AA;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+    --colorNegro: #000;
+    --colorBlanco: #FFF;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+p{
+    font-size: 12px;
+}
+
+.last-visit h3,
+.offers h3{
+    font-size: 24px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+header{
+    background-color: #EAC926;
+    padding-bottom: 30px;
+}
+
+div.top-header{
+    padding: 5%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header figure.logo{
+    width: 50%;
+    max-width: 220px;
+}
+
+header figure.logo{
+    padding: 10px;
+}
+
+header .form{
+    width: 50%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+header .form .input{
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 10px;
+    margin-bottom: 2px;
+    width: 70%;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    color: #666;
+}
+
+header .form .submit{
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px;
+    margin-bottom: 2px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFF;
+    border: 1px none transparent;
+    border-radius: 0px 5px 5px 0px;
+    width: 12%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav{
+    font-size: 12px;
+    /* Clase 13 peer-review */
+    display: none;
+}
+
+header nav ul{
+    margin-bottom: 10px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+div.burger-menu{
+    text-align: center;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*SECCIÓNHOME*/
+section.banner div{
+    width: 100%;
+}
+
+section.banner div img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section article{
+    background-color: #FFF;
+    margin: 10px 0;
+}
+
+main section article img{
+    width: 100%;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+article div.main-article i{
+    font-size: 16px;
+    text-align: center;
+    background-color: #FFF;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    border: 1px solid #39b54a;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    transition: all 600ms;
+}
+
+article div.main-article i:hover {
+    transform: rotate(-90deg);
+}
+
+.price-and-discount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price-and-discount .price {
+    width: 28%;
+}
+
+.price-and-discount .discount {
+    width: 45%;
+}
+
+article div.main-article h4{
+    margin-top: 20px;
+    display: none;
+    transition: all 600ms;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+
+/*SECCIÓNREGISTRO*/
+h2.register-title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form.register-form>div.form-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20%; 
+}
+
+form.register-form div.form-div input {
+    width: 100%;
+    height: 28px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+form.register-form div.form-div div.profile-options input{
+    height: 10px;
+    width: 10px;
+}
+
+form.register-form div.form-div label.form-label {
+    margin-bottom: 10px;
+}
+
+form.register-form div.form-div label {
+    width: 100%;
+    margin-top: 5px;
+}
+
+form.register-form div.form-div label input {
+    width: 10px;
+    height: 10px;
+}
+
+form.register-form div.form-buttons {
+    display: flex;
+    margin: 20px 20%;
+    justify-content: space-between;
+}
+
+form.register-form div.form-buttons button {
+    width: 45%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0331ea;
+    color: #ffffff;
+}
+
+form.register-form .form-div>input:focus{
+    font-weight: bold;
+}
+
+
+/*SECCIÓNLOGIN*/
+h2.login-title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form.login-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20%;
+}
+
+form.login-form div.form-div {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form.login-form div.form-div input {
+    width: 100%;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+}
+
+form.login-form .form-div input:focus{
+    font-weight: bold;
+}
+
+form.login-form .form-div input::placeholder{
+    color: #666;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+form.login-form div.form-button {
+    width: 100%;  
+    margin-top: 20px; 
+}
+
+form.login-form button {
+    width: 100%;
+    height: 28px;
+    background-color: #0331ea;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: all 600ms;
+}
+
+form.login-form button:hover {
+    background: #0331ea;
+    color: #ffffff;
+}
+
+
+/*SECCIÓNFOOTER*/
+footer {
+    text-align:center;
+    background-color: #ffffff;
+}
+
+footer section {
+    padding-top: 30px;
+}
+
+footer h2 {
+    margin:0;
+    font-size: 20px;
+}
+
+footer i {
+    color: #0044AA;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+footer p {
+    width: 70vw;
+    margin: auto;
+}
+
+.copyright {
+    text-align: left;
+    padding: 20px 10px 15px;
+    margin: 0;
+}
+
+
+/*VISTATABLET*/
+@media (min-width: 480px){
+
+    /*HEADER*/
+    div.burger-menu{
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        width: 48%;
+        justify-content: space-around;
+    }
+
+    header nav ul li a{
+        width: 100%;
+    }
+
+    /*MAIN*/
+
+    main section div article {
+        transition: all 600ms;
+    }
+  
+    main section div article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* Clase 16 - Micro desafío 1 */
+    }
+
+    /* Clase 16 - Micro desafío 1 */
+
+
+    article:hover div.main-article > h4{
+        display: block;
+        /* Clase 16 - Micro desafío 1 */
+
+    }
+    
+    /* Clase 16 - Micro desafío 1 */
+
+
+    /* Clase 13 peer-review */
+    
+
+    /* Clase 14 - Micro desafío 1 */
+    p.price{
+        min-width: 85px;
+        max-width: 85px;
+    }
+
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+    
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products article{
+        width: 45%;
+    }
+
+  
+    
+}
+
+/*VISTADESKTOP*/
+
+@media (min-width: 960px){
+
+    header div.top-header p {
+        width: 24%;
+    }
+
+    div.top-header {
+        padding: 0;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    header nav {
+        position: relative;
+        top: 15px;
+    }
+
+    header nav ul {
+        width: 26%;
+        margin: 0 5%;
+    }
+
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products article{
+        width: 22%;
+    }
+
+    h2.login-title {
+        margin-top: 10vh;
+    }
+
+    form.login-form {
+        margin: 10px 30%;
+    }
+
+    form.login-form div.form-button {
+        margin-bottom: 10vh;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    }
+
+    footer section {
+        width: 30%;
+    }
+
+    footer section p{
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    footer section p.copyright {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    footer section i:hover{
+        color: green;
+    }
+   
+}
+
+
+
+
+
